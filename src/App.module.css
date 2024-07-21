@@ -1,0 +1,105 @@
+.movieGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .movieCard img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: white;
+  }
+  
+  .loadMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .movieDetails {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+    overflow: scroll;
+  }
+  .movieDetails::-webkit-scrollbar {
+    width: 0px;
+  }
+  .movieTitle {
+    flex: 1;
+    font-size: 5rem;
+    color: white;
+      
+  }
+  
+  .moviePoster {
+    max-width: 70%; 
+    height: 100%;
+  }
+  .movieDetailsContent {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .blurEffect {
+    filter: blur(5px);
+  }
+  .movieOverview {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  .posterContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75); 
+    color: white;
+    padding: 5px;
+    border-radius: 0 0 0 5px; 
+  }
+
+  .parentContainer {
+    position: relative;
+  }
+  
+  .closeButton {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff; 
+    background: #000; 
+    border-radius: 50%; 
+    width: 30px; 
+    display: flex;
+    justify-content: center;
+
+  }
