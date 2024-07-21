@@ -7,7 +7,7 @@ export function App() {
   const [selectedMovie, setSelectedMovie] = useState(null); 
 
   const fetchMovies = (pageNum) => {
-    const apiKey = 'TMDB_API_KEY';
+    const apiKey = process.env.REACT_APP_TMDB_API_KEY;
     const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=${pageNum}`;
 
     fetch(url)
